@@ -186,3 +186,35 @@ footer nav ul {
 	margin: 2em
 }
 
+/* 
+#cat{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2em;
+	
+	height: 38px;
+
+
+}
+
+#cat a{
+	display: flex;
+	align-items: center;
+	height: 37px;
+	border-radius: 60px;
+	border: 1px #1D6154 solid;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	min-width: 37px;
+	text-decoration: none;
+	color: #1D6154;
+}
+
+
+#cat a:hover{
+	background-color: #1D6154;
+	color: white;
+} */

@@ -26,6 +26,24 @@
     
         }
 
+        const cat = await fetch("http://localhost:5678/api/categories");
+		const cats = await cat.json();
+		console.log(cats);
+
+
+        const sectionCat = document.querySelector(".cat");
+        
+        for (let i = 0; i < cats.length; i++){
+		
+            const projet = cats[i];
+           
+            const elementCat = document.createElement("a");
+            elementCat.innerText = projet.name;
+            
+            
+
+            sectionCat.appendChild(elementCat);
+    
+        }
         
 
-        

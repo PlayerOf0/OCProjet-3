@@ -187,17 +187,14 @@ footer nav ul {
 }
 
 
-#cat{
+.cat{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 2em;
-	
 	height: 38px;
-
-
 }
 
-#cat a{
+.cat a{
 	display: flex;
 	align-items: center;
 	height: 37px;
@@ -214,7 +211,7 @@ footer nav ul {
 }
 
 
-#cat a:hover{
+.cat a:hover{
 	background-color: #1D6154;
 	color: white;
 }

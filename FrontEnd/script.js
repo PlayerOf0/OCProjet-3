@@ -45,5 +45,32 @@
             sectionCat.appendChild(elementCat);
     
         }
+
+
+
+
+
+        // connexion 
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+        
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const messageDiv = document.getElementById('message');
+        
+            // Exemple de validation simple
+            if (email === 'ali' && password === 'ali') {
+                messageDiv.textContent = 'Connexion réussie !';
+                messageDiv.style.color = 'green';
+                console.log("bien jouer t'es bien connecter");
+            } else {
+                messageDiv.textContent = 'Email ou mot de passe incorrect.';
+                messageDiv.style.color = 'red';
+                console.log("tu n'est pas connecter");
+            }
+        });
         
 
+
+        

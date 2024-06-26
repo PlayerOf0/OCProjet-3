@@ -52,6 +52,7 @@ body {
 	margin:auto;
 	font-family: 'Work Sans' ;
 	font-size: 14px;
+	background-color: #FFFEF8;
 }
 header {
 	display: flex;
@@ -98,6 +99,7 @@ nav li {
 li:hover {
 	color: #B1663C;
 }
+
 #introduction {
 	display: flex;
 	align-items: center;
@@ -107,7 +109,7 @@ li:hover {
 }
 #introduction img {
 	display: block;
-	margin: auto;
+	/* margin: auto; */
 	width: 80%;
 }
 
@@ -183,7 +185,11 @@ input[type="submit"]{
 footer nav ul {
 	display: flex;
 	justify-content: flex-end;
-	margin: 2em
+	padding-top: 2%;
+  	padding-bottom: 2%;
+  	padding-right: 2%;
+	background-color: white;
+
 }
 
 
@@ -214,4 +220,128 @@ footer nav ul {
 .cat a:hover{
 	background-color: #1D6154;
 	color: white;
+}
+
+
+
+
+
+/* ici pour le formulaire */
+
+.login_center{
+	font-family: Arial, sans-serif;
+    background-color: #FFFEF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #FFFEF8;
+    padding: 2rem;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #1D6154;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.login-form label {
+    margin-top: 1rem;
+    text-align: left;
+    color: #555;
+}
+
+.login-form input {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1D6154;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+	width: 45%;
+	margin-left: 27%;
+}
+
+.login-form button:hover {
+    background-color: #0E2F28;
+}
+
+.forgot-password {
+    margin-top: 1rem;
+    color: black;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+
+.link{
+	text-decoration: none;
+  	font-weight: bold;
+}
+.link:hover{
+	color: #B1663C;
+}
+
+.link:visited {
+    color: inherit;
+}
+
+.sans_lien{
+	text-decoration: none;
+}
+
+.sans_lien:visited{
+	color: inherit;
+}
+
+
+.center_projets{
+	display: flex;
+	justify-content: center;
+}
+
+
+.modify_buton{
+	margin-left: 1em;
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+.modify_buton:visited{
+	color: inherit;
+}
+
+
+.fa-solid{
+	margin-right: 10px;
 }

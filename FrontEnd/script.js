@@ -48,29 +48,29 @@
 
 
 
+// -----------------------------------------------------------------------------//
+        const modalContainer = document.querySelector(".modal-container");
+        const modalTriggers = document.querySelectorAll(".modal-trigger");
+
+        modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
+
+        function toggleModal(){
+            modalContainer.classList.toggle("active")
+        }
+
+// attention ici
+        document.getElementById('closeGalleryBtn').addEventListener('click', function() {
+            document.getElementById('photoGallery').classList.add('hidden');
+          });
 
 
-        // connexion 
-
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Empêche le rechargement de la page
-        
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const messageDiv = document.getElementById('message');
-        
-            // Exemple de validation simple
-            if (email === 'ali' && password === 'ali') {
-                messageDiv.textContent = 'Connexion réussie !';
-                messageDiv.style.color = 'green';
-                console.log("bien jouer t'es bien connecter");
-            } else {
-                messageDiv.textContent = 'Email ou mot de passe incorrect.';
-                messageDiv.style.color = 'red';
-                console.log("tu n'est pas connecter");
-            }
-        });
-        
+// -----------------------------------------------------------------------------//
 
 
-        
+          // Sélectionner l'icône par son ID
+          const icon = document.getElementById('myIcon');
+								
+          // Ajouter un gestionnaire d'événements pour le clic
+          icon.addEventListener('click', function() {
+              alert('Icône cliquée !');
+          });
